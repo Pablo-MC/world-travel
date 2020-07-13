@@ -1,1 +1,42 @@
+/***************************
+** BASIC SETUP */
 
+::-webkit-scrollbar { width: 0; }
+:root { scrollbar-width: none; }
+
+
+/***************************
+** HEADER */
+
+.header {
+   background-image: linear-gradient(rgba(3, 10, 18, .65), rgba(1, 8 , 16, .60)), url(../img/hero.jpg);
+   background-size: cover;
+   background-position:top;
+   background-attachment: fixed;
+   min-height: 100vh;
+}
+
+
+/***************************
+** SECTION TOURS */
+
+#tours {
+   background: #eee;
+   padding: 80px 0;
+   overflow-x: hidden; // Soluciona el problema del desbordamiento horizontal.
+}
+
+
+/***************************
+** SECTION GALLERY */
+
+#gallery {
+   padding: 80px 0;
+
+   .photo { height: 60vh; }
+}
+
+
+
+// background: #999;
+// background: #333;
