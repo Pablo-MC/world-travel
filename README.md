@@ -1,3 +1,3 @@
-# **World-Travel**
+# **World-Travel** :evergreen_tree:
 
-## _Landing Page_
+<img src="/src/img/screenshot.jpg" width="400">
