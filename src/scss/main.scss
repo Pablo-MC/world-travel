@@ -5,38 +5,120 @@
 :root { scrollbar-width: none; }
 
 
+
 /***************************
 ** HEADER */
 
 .header {
    background-image: linear-gradient(rgba(3, 10, 18, .65), rgba(1, 8 , 16, .60)), url(../img/hero.jpg);
    background-size: cover;
-   background-position:top;
    background-attachment: fixed;
    min-height: 100vh;
+   overflow-x: hidden;
+   padding: 20px 0 80px 0;
 }
 
 
 /***************************
-** SECTION TOURS */
+** TOURS */
 
 #tours {
    background: #eee;
    padding: 80px 0;
-   overflow-x: hidden; // Soluciona el problema del desbordamiento horizontal.
+   overflow-x: hidden;
 }
 
 
 /***************************
-** SECTION GALLERY */
+** NEWSLETTER */
+
+#newsletter {
+   padding: 80px 0;
+   background-image: linear-gradient(rgba(3, 10, 18, .65), rgba(1, 8 , 16, .60)), url(../img/contact.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   overflow-x: hidden;
+
+}
+
+
+/***************************
+** TESTIMONIAL */
+
+#testimonial {
+   background-color: #eee;
+   padding: 80px 0;
+   overflow-x: hidden;
+}
+
+
+/***************************
+** GALLERY */
 
 #gallery {
-   padding: 80px 0;
+   background-color: #f8f9fa;
+   padding: 80px 20px;
+   overflow-x: hidden;
+}
 
-   .photo { height: 60vh; }
+.photo {
+   width: 100%;
+   max-height: 450px;
+}
+
+
+/***************************
+** CONTACT */
+
+#contact {
+   padding: 70px 0 60px 0;
+   overflow-x: hidden;
+}
+
+
+/***************************
+** FOOTER */
+
+.footer {
+   background-color: #101D2C;
+   overflow-y: hidden;
+
+   &__facebook { color: #007bff; }
+   &__twitter { color: #55acee; }
+   &__instagram { color: #c32aa3; }
+   &__youtube { color: #bb0000; }
+
+   &__copyright { letter-spacing: 1.5px; }
+
 }
 
 
 
-// background: #999;
-// background: #333;
+/***************************
+** SCROLL TOP ANIMATION */
+
+.scrollTop {
+	position: fixed;
+	bottom: 80rem;
+	right: 1.5rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(../img/up.svg);
+   background-color: #28a745;
+   border-radius: 50%;
+	background-size: 2rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 100000;
+	visibility: hidden;
+	opacity: 0;
+   cursor: pointer;
+
+	transition: 4s; // Velocidad por default .5s
+}
+
+.scrollTop.active {
+	bottom: 2rem;
+	visibility: visible;
+	opacity: 1;
+}

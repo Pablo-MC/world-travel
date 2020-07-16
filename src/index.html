@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
       <!-- FONT-AWESOME -->
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <!-- BOOTSTRAP CSS -->
@@ -15,30 +16,25 @@
       <title>World Travel</title>
    </head>
    <body>
-      <header class="header pt-3">
+      <header class="header">
          <div class="container">
             <nav class="navbar navbar-expand-lg h4">
-               <a class="navbar-brand text-success" href="#"><i class="fa fa-globe text-success mr-3 h2"></i><span class="h3">Word Travel</span></a>
+               <a class="navbar-brand text-success" href="/">
+                  <i class="fa fa-globe text-success mr-3 h2"></i><span class="h3">World Travel</span>
+               </a>
               <button class="navbar-toggler navbar-light bg-info" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto text-uppercase">
-                   <a class="nav-item nav-link text-info" href="#">Home</a>
-                   <a class="nav-item nav-link ml-3" href="#tours">Tours</a>
-                  <a class="nav-item nav-link ml-3" href="#gallery">Galley</a>
-                  <a class="nav-item nav-link ml-3 text-danger" href="#contact">Contact</a>
-                </div>
+              <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto text-uppercase">
+                     <a class="nav-item nav-link text-info" href="/">Home</a>
+                     <a class="nav-item nav-link ml-3" href="#tours">Tours</a>
+                     <a class="nav-item nav-link ml-3" href="#gallery">Galley</a>
+                     <a class="nav-item nav-link ml-3 text-danger" href="#contact">Contact</a>
+                  </div>
               </div>
             </nav>
-         </div>
-         <div class="container pt-5">
-            <h1 class="display-2 text-white pt-5 font-weight-bold">Make <br> room for <br> adventure.</h1>
-            <div class="row">
-               <div class="col-lg-5">
-                  <p class="lead text-info text-justify pt-3 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-               </div>
-            </div>
+            <h1 class="display-2 text-white font-weight-bold mt-5 pt-5">Make <br> room for <br> adventure.</h1>
          </div>
       </header>
 
@@ -48,7 +44,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 text-center">
-                  <img src="img/tour.jpg" class="img-fluid img-thumbnail shadow w-75 tours-animation-left" alt="Tour">
+                  <img src="img/tour.jpg" class="img-fluid img-thumbnail shadow mt-4 w-75 tours-animation-left" alt="Tour">
                </div>
                <div class="col-lg-6 my-auto">
                   <div class="tours-animation-right text-center px-2">
@@ -62,66 +58,165 @@
          </div>
       </section>
 
+      <!-- NEWSLETTER -->
+
+      <section id="newsletter">
+         <div class="container text-light">
+            <h2 class="display-3">Newsletter</h2>
+            <p class="lead mb-4">Receive the best weekly tips, news and information about new tours!</p>
+            <div class="row">
+               <div class="col-md-4 mb-2">
+                  <input class="form-control form-control-lg" type="text" placeholder="Your Name">
+               </div>
+               <div class="col-md-4 mb-4">
+                  <input class="form-control form-control-lg" type="email" placeholder="Your Email">
+               </div>
+               <div class="col-md-4">
+                  <button class="btn btn-dark btn-lg btn-block button-animation">Subscribe <i class="fa fa-paper-plane-o ml-2"></i></button>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <!-- GALLERY -->
 
       <section id="gallery">
          <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/carousel-1.jpg" class="d-block w-100 img-fluid img-thumbnail shadow photo" alt="Photo-1">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="img/carousel-1.jpg" class="img-fluid img-thumbnail shadow photo" alt="Photo-1">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/carousel-2.jpg" class="d-block w-100 img-fluid img-thumbnail shadow photo" alt="Photo-2">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <div class="carousel-item">
+                     <img src="img/carousel-2.jpg" class="img-fluid img-thumbnail shadow photo" alt="Photo-2">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/carousel-3.jpg" class="d-block w-100 img-fluid img-thumbnail shadow photo" alt="Photo-3">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <div class="carousel-item">
+                     <img src="img/carousel-3.jpg" class="img-fluid img-thumbnail shadow photo" alt="Photo-3">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>  <!-- Movimiento automático -->
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>  <!-- Movimiento automático -->
-              </a>
-           </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>  <!-- Movimiento automático -->
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>  <!-- Movimiento automático -->
+               </a>
+            </div>
          </div>
       </section>
 
       <!-- TESTIMONIAL -->
 
+      <section id="testimonial">
+         <div class="container">
+            <h2 class="display-4 text-center mb-5 testimonial-animation">¡Our customers can't live without travel!</h2>
+            <div class="row">
+               <div class="col-lg-4 text-center mb-3">
+                  <div class="card bg-dark border-dark shadow-lg p-3 pt-4">
+                     <img src="img/avatar-1.jpg" class="border-light img-thumbnail rounded-circle m-auto" alt="Customer-1">
+                     <div class="card-body font-italic">
+                        <p class="card-text lead text-light">"I couldn't have asked for more than this. Travel World is great. Thank You!"</p>
+                        <h5 class="text-success">- Elizabeth Sutton -</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 text-center mb-3">
+                  <div class="card bg-dark border-dark shadow-lg p-3 pt-4">
+                     <img src="img/avatar-2.jpg" class="border-light img-thumbnail rounded-circle m-auto" alt="Customer-2">
+                     <div class="card-body font-italic">
+                        <p class="card-text lead text-light">"It's really wonderful. Travel is worth much more than I paid. Thanks travel!"</p>
+                        <h5 class="text-success">- Joel Lopez -</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 text-center">
+                  <div class="card bg-dark border-dark shadow-lg p-3 pt-4">
+                     <img src="img/avatar-3.jpg" class="border-light img-thumbnail rounded-circle m-auto" alt="Customer-3">
+                     <div class="card-body font-italic">
+                        <p class="card-text lead text-light">"I use travel often. I was amazed at the quality of travel. The service was excellent."</p>
+                        <h5 class="text-success">- Rachel Campbell -</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
       <!-- CONTACT -->
 
-      <!-- <section id="contact">
+      <section id="contact">
          <div class="container">
-            Form
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="d-block d-lg-none text-center">
+                     <h2 class="text-center display-4 pb-4">Contact<i class="fa fa-id-card text-success ml-4"></i></h2>
+                  </div>
+                  <form action="index.html" method="post">
+                     <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <i class="fa fa-user-circle input-group-text text-success"></i>
+                        </div>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                     </div>
+                     <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <i class="fa fa-envelope input-group-text text-success"></i>
+                        </div>
+                        <input type="email" class="form-control form-control-lg" placeholder="Email">
+                     </div>
+                     <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                           <i class="fa fa-pencil-square-o input-group-text text-success"></i>
+                        </div>
+                        <textarea class="form-control form-control-lg" rows="6" placeholder="Your Message..."></textarea>
+                     </div>
+                     <button class="btn btn-success btn-lg btn-block button-animation" type="button">Send</button>
+                  </form>
+               </div>
+               <div class="col-lg-6 d-none d-lg-block">
+                  <div class=" text-center pl-5">
+                     <i class="fa fa-globe text-success mr-3 h1"></i>
+                     <h2 class="d-inline">World Travel</h2>
+                     <p class="lead text-justify mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpaim id est laborum.</p>
+                  </div>
+               </div>
+            </div>
          </div>
-      </section> -->
-
+      </section>
 
       <!-- FOOTER -->
 
+      <footer class="footer">
+         <div class="container">
+            <div class="d-flex justify-content-center h1 mt-4">
+               <div class="p-4"><a href="#"><i class="footer__facebook fa fa-facebook"></i></a></div>
+               <div class="p-4"><a href="#"><i class="footer__twitter fa fa-twitter"></i></a></div>
+               <div class="p-4"><a href="#"><i class="footer__instagram fa fa-instagram"></i></a></div>
+               <div class="p-4"><a href="#"><i class="footer__youtube fa fa-youtube-play"></i></a></div>
+            </div>
+            <p class="footer__copyright lead text-uppercase text-success text-center">Copyright &copy; 2020 by Pablo Martín Cruz</p>
+         </div>
+      </footer>
 
+
+
+      <!-- Animación Scroll Top -->
+      <div class="scrollTop" onclick="scrollToTop();"></div>
 
       <!-- BOOTSTRAP SCRIPTS -->
       <script src="js/jquery.min.js"></script>
@@ -130,6 +225,6 @@
       <!-- SCROLL REVEAL SCRIPTS -->
       <script src="js/scrollreveal.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
-      <script src="js/app.js"></script>
+      <script src="js/script.js"></script>
    </body>
 </html>
