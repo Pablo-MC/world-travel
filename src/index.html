@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta property="og:image" content="https://raw.githubusercontent.com/Pablo-MC/world-travel/master/src/img/hero.jpg" />
 
       <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
       <!-- FONT-AWESOME -->
@@ -22,7 +23,7 @@
                <a class="navbar-brand text-success" href="/">
                   <i class="fa fa-globe text-success mr-3 h2"></i><span class="h3">World Travel</span>
                </a>
-              <button class="navbar-toggler navbar-light bg-info" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler navbar-light bg-info h5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
@@ -34,22 +35,23 @@
                   </div>
               </div>
             </nav>
-            <h1 class="display-2 text-white font-weight-bold mt-5 pt-5">Make <br> room for <br> adventure.</h1>
+            <h1 class="d-block d-sm-none display-3 text-white font-weight-bold mt-5 pt-5">Make <br> room for <br> adventure.</h1>
+            <h1 class="d-none d-sm-block display-2 text-white font-weight-bold mt-5 pt-5">Make <br> room for <br> adventure.</h1>
          </div>
       </header>
 
       <!-- TOURS -->
 
       <section id="tours">
-         <div class="container">
+         <div class="container py-5 my-4">
             <div class="row">
                <div class="col-lg-6 text-center">
-                  <img src="img/tour.jpg" class="img-fluid img-thumbnail shadow mt-4 w-75 tours-animation-left" alt="Tour">
+                  <img src="img/tour.jpg" class="img-fluid img-thumbnail shadow w-75 tours-animation-left" alt="Tour">
                </div>
-               <div class="col-lg-6 my-auto">
+               <div class="col-lg-6">
                   <div class="tours-animation-right text-center px-2">
                      <h2 class="display-4 font-weight-normal mt-5">Take a Tour</h2>
-                     <p class="lead text-justify pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet labore.
+                     <p class="lead text-justify pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.
                      </p>
                      <a class="btn btn-lg btn-dark my-4 d-none d-md-block" href="#gallery">View Galley <i class="fa fa-tripadvisor ml-2"></i></a>
                   </div>
@@ -60,9 +62,10 @@
 
       <!-- NEWSLETTER -->
 
-      <section id="newsletter">
-         <div class="container text-light">
-            <h2 class="display-3">Newsletter</h2>
+      <section class="container">
+         <div class="container newsletter text-light py-5 px-5">
+            <h2 class="d-block d-sm-none display-4">Newsletter</h2>
+            <h2 class="d-none d-sm-block display-3">Newsletter</h2>
             <p class="lead mb-4">Receive the best weekly tips, news and information about new tours!</p>
             <div class="row">
                <div class="col-md-4 mb-2">
@@ -81,7 +84,7 @@
       <!-- GALLERY -->
 
       <section id="gallery">
-         <div class="container py-5 d-none d-md-block ">
+         <div class="container d-none d-md-block py-5 mt-4">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -122,9 +125,10 @@
 
       <!-- TESTIMONIAL -->
 
-      <section id="testimonial">
-         <div class="container">
-            <h2 class="display-4 text-center mb-5 testimonial-animation">¡Our customers can't live without travel!</h2>
+      <section>
+         <div class="container border-bottom py-5">
+            <h2 class="d-block d-sm-none display-4 text-center mb-5 testimonial-animation">¡Our customers!</h2>
+            <h2 class="d-none d-sm-block display-4 text-center mb-5 testimonial-animation">¡Our customers can't live without travel!</h2>
             <div class="row">
                <div class="col-lg-4 text-center mb-3">
                   <div class="card bg-dark border-dark shadow-lg p-3 pt-4">
@@ -160,7 +164,7 @@
       <!-- CONTACT -->
 
       <section id="contact">
-         <div class="container">
+         <div class="container py-5">
             <div class="row">
                <div class="col-lg-6">
                   <div class="d-block d-lg-none text-center">
@@ -185,7 +189,7 @@
                         </div>
                         <textarea class="form-control form-control-lg" rows="6" placeholder="Your Message..."></textarea>
                      </div>
-                     <button class="btn btn-success btn-lg btn-block button-animation" type="button">Send</button>
+                     <button class="btn btn-success btn-lg btn-block button-animation" type="button">Send<i class="fa fa-share-square-o ml-3"></i></button>
                   </form>
                </div>
                <div class="col-lg-6 d-none d-lg-block">
@@ -202,14 +206,14 @@
       <!-- FOOTER -->
 
       <footer class="footer">
-         <div class="container">
-            <div class="d-flex justify-content-center h1 mt-4">
-               <div class="p-4"><a href="#"><i class="footer__facebook fa fa-facebook"></i></a></div>
-               <div class="p-4"><a href="#"><i class="footer__twitter fa fa-twitter"></i></a></div>
-               <div class="p-4"><a href="#"><i class="footer__instagram fa fa-instagram"></i></a></div>
-               <div class="p-4"><a href="#"><i class="footer__youtube fa fa-youtube-play"></i></a></div>
+         <div class="container p-4">
+            <div class="d-flex justify-content-center m-auto w-25 h2 p-3">
+               <a href="#"><i class="footer__facebook fa fa-facebook"></i></a>
+               <a href="#"><i class="footer__twitter fa fa-twitter"></i></a>
+               <a href="#"><i class="footer__instagram fa fa-instagram"></i></a>
+               <a href="#"><i class="footer__youtube fa fa-youtube-play"></i></a>
             </div>
-            <p class="footer__copyright lead text-uppercase text-success text-center">Copyright &copy; 2020 by Pablo Martín Cruz</p>
+            <p class="footer__copyright lead text-uppercase text-success text-center m-0">&copy; 2020 by Pablo Martín Cruz</p>
          </div>
       </footer>
 

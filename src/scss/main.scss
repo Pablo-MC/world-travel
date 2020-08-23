@@ -4,6 +4,10 @@
 ::-webkit-scrollbar { width: 0; }
 :root { scrollbar-width: none; }
 
+body {
+   background: #eee;
+   overflow-x: hidden;
+}
 
 
 /***************************
@@ -15,57 +19,18 @@
    background-attachment: fixed;
    min-height: 100vh;
    overflow-x: hidden;
-   // padding: 20px 0 80px 0;
-}
 
-
-/***************************
-** TOURS */
-
-#tours {
-   background: #eee;
-   padding: 80px 0;
-   overflow-x: hidden;
 }
 
 
 /***************************
 ** NEWSLETTER */
 
-#newsletter {
-   padding: 80px 0;
+.newsletter {
    background-image: linear-gradient(rgba(3, 10, 18, .65), rgba(1, 8 , 16, .60)), url(../img/contact.jpg);
    background-size: cover;
    background-attachment: fixed;
-   overflow-x: hidden;
-
-}
-
-
-/***************************
-** TESTIMONIAL */
-
-#testimonial {
-   background-color: #eee;
-   padding: 80px 0;
-   overflow-x: hidden;
-}
-
-
-/***************************
-** GALLERY */
-
-#gallery {
-   background-color: #f8f9fa;
-   overflow-x: hidden;
-}
-
-
-/***************************
-** CONTACT */
-
-#contact {
-   padding: 70px 0 60px 0;
+   border-radius: 5px;
    overflow-x: hidden;
 }
 
@@ -75,7 +40,6 @@
 
 .footer {
    background-color: #101D2C;
-   overflow-y: hidden;
 
    &__facebook { color: #007bff; }
    &__twitter { color: #55acee; }
@@ -83,6 +47,8 @@
    &__youtube { color: #bb0000; }
 
    &__copyright { letter-spacing: 1.5px; }
+
+   a { padding: 10px 20px; }
 
 }
 
