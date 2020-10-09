@@ -4,4 +4,4 @@
  
 ###
 
-<img src="/src/img/screenshot.jpg" width="400">
+<img src="/src/img/screenshot.jpg" width="600">
